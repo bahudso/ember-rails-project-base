@@ -13,5 +13,6 @@ The rails project implements the backend server application. It runs devise for 
 The Ember.js frontend uses [ember-cli-simple-auth-devise](https://github.com/simplabs/ember-cli-simple-auth-devise) for local session management.
 
 ### Versions
-* [Ember-Cli 0.1.1]()
-* [ember-cli-simple-auth-devise 0.6.7](https://github.com/simplabs/ember-cli-simple-auth-devise)
+* [Ember-Cli 0.1.1](https://github.com/stefanpenner/ember-cli)
+* [Ember-cli-simple-auth-devise 0.6.7](https://github.com/simplabs/ember-cli-simple-auth-devise)
+* [Ember-cli-bootstrap 0.0.12](https://github.com/dockyard/ember-cli-bootstrap)

@@ -1,3 +1,24 @@
-<h2 id='title'>Welcome to Ember.js</h2>
-
-{{outlet}}
+<div class="navbar navbar-fixed-top navbar-inverse" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#"></a>
+    </div>
+    <div class="navbar-collapse collapse" style="height: 1px;">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Home</a></li>
+        {{#if session.isAuthenticated}}
+        <li><a {{ action 'invalidateSession' }}>Logout</a></li>
+        {{/if}}
+      </ul>
+    </div><!-- /.nav-collapse -->
+  </div><!-- /.container -->
+</div>
+<div id="content" class="container">
+	<div class="row">{{outlet}}</div>
+</div>
